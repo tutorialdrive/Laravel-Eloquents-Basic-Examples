@@ -18,4 +18,4 @@ before_script:
    - php artisan serve &
 
 script:
-   - php artisan dusk
+   - 
