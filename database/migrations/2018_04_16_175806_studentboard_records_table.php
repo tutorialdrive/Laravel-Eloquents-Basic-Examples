@@ -31,17 +31,15 @@ class StudentboardRecordsTable extends Migration
             $table->foreign('college_id')
                 ->references('id')->on('colleges')->onDelete('cascade')->onUpdate('cascade');
 
-            $table->foreign('priority')
+            $table->foreign('priority_id')
                 ->references('id')->on('priorities')->onDelete('cascade')->onUpdate('cascade');
 
-            $table->foreign('category')
+            $table->foreign('category_id')
                 ->references('id')->on('categories')->onDelete('cascade')->onUpdate('cascade');
 
             $table->foreign('college_id')
                 ->references('id')->on('colleges')->onDelete('cascade')->onUpdate('cascade');
 
-            $table->foreign('created_by')
-                ->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
