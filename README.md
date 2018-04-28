@@ -1,5 +1,6 @@
 # Laravel-Eloquents-Basic-Examples
 
+[![Build Status](https://travis-ci.org/tutorialdrive/Laravel-Eloquents-Basic-Examples.svg?branch=master)](https://travis-ci.org/tutorialdrive/Laravel-Eloquents-Basic-Examples)
 
 Set of eloquents examples with simple CURD application.
 
