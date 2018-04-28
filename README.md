@@ -28,19 +28,25 @@ These instructions will get you a copy of the project up and running on your loc
 git clone https://github.com/tutorialdrive/Laravel-Eloquents-Basic-Examples.git
 ```
 
-2. Create database schema into MySQL server
+
+2. Install dependency via composer. Run following command into project root directory.
+```
+>composer install
+```
+
+3. Create database schema into MySQL server
 
 ```
 mysql> create schema <your_schema_name>;
 ```
-3. Go to your project directory and edit **.env** file and change **APP_URL**, **DB_DATABASE**, **DB_USERNAME** and **DB_PASSWORD** based on your server's configuration values. I.e. Host name, database username and password.
+4. Go to your project directory and edit **.env** file and change **APP_URL**, **DB_DATABASE**, **DB_USERNAME** and **DB_PASSWORD** based on your server's configuration values. I.e. Host name, database username and password.
 
-4. Run following migration command to create database tables into your selected schema. It will create required tables into database. (There is database dump into database/dump directory, you can also use that.)
+5. Run following migration command to create database tables into your selected schema. It will create required tables into database. (There is database dump into database/dump directory, you can also use that.)
 ```
 php artisan migrate
 ```
 
-5. You can create virtual host or can you use PHP Laravel's built-in development server by running following command to serve your application.
+6. You can create virtual host or can you use PHP Laravel's built-in development server by running following command to serve your application.
 ```
 php artisan serve
 ```
